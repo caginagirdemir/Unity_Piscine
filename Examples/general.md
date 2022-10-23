@@ -16,4 +16,4 @@ abstract class bir kere miras alınabilir. Eğer abstract class ın bir fonksiyo
 
 eğer birden fazla inheritance gereksiyorsa interface oluşturmalıyız. Interface class isimleri I ile başlar. 
 
-Invoke(FunctionName, Time(as second))
+Invoke(FunctionName, Time(as second)) belirtilen süreyi saniye olarak bekler ve fonksiyonu çalıştırır
