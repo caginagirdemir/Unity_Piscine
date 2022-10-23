@@ -15,3 +15,5 @@ private void OnTriggerEnter() Atanan objenin collider componentindeki IsTrigger 
 abstract class bir kere miras alınabilir. Eğer abstract class ın bir fonksiyonu override olacaksa asbtract içinde virtual olarak belirtilmelidir.
 
 eğer birden fazla inheritance gereksiyorsa interface oluşturmalıyız. Interface class isimleri I ile başlar. 
+
+Invoke(FunctionName, Time(as second))
