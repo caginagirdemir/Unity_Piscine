@@ -6,15 +6,25 @@ public class Cou : MonoBehaviour
 {
     public Vector3 spawnPoint;
     public GameObject spawnObject;
+    public float respawnDelay = 1f;
+    Coroutine spawnRoutine;
 
-    void Start()
+    public void Start()
     {
-        StartCoroutine("Spawner");
+        spawnRoutine = StartCoroutine(Spawner());
+    }
+
+    public void Update()
+    {
+        if (Input.GetKeyDown("space"))
+        {
+            StopCoroutine(spawnRoutine);
+        }
     }
 
     IEnumerator Spawner()
     {
-        while(True)
+        while(true)
         {
             yield return new WaitForSeconds(1f);
             spawnPoint = new Vector3(Random.Range(-5, 6), 5, Random.Range(-5, 6));
